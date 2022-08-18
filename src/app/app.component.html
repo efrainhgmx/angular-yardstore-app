@@ -1,5 +1,9 @@
-<div *ngFor="let product of products">
-    <h2>{{ product.name }}</h2>
-    <p>{{ product.price }}</p>
-    <img width="100" [src]="product.image" alt="product.name">
+<div class="product-grid">
+    <div *ngFor="let product of products">
+        <figure>
+            <img [src]="product.image" alt="product.name" loading="lazy">
+        </figure>
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.price }}</p>
+    </div>
 </div>
