@@ -1,6 +1,5 @@
-<h1>Hola mundo aqui!!!</h1>
-<h2>{{ 'Hola '.repeat(5)}}</h2>
-<p>3 + 3 = {{ 3 + 3 }}</p>
-<p>Bienvenido a la tienda {{ title }}</p>
-
-<progress max="100" [value]="barProgress"></progress>
+<div *ngFor="let product of products">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.price }}</p>
+    <img width="100" [src]="product.image" alt="product.name">
+</div>
