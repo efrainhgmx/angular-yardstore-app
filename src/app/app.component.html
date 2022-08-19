@@ -7,7 +7,7 @@
         <p>{{ product.price }}</p>
     </div>
 
-    <input type="color" [(ngModel)]="box.background">
+    <input (change)="info()" type="color" [(ngModel)]="box.background">
 
     <div [ngStyle]="{
         'width.px': 100,

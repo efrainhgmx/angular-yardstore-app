@@ -45,4 +45,10 @@ export class AppComponent {
       image: '../assets/images/phone.webp'
     },
   ]
+
+  info() {
+    console.log(this.box);
+  }
+
 }
+
