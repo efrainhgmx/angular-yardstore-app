@@ -6,4 +6,14 @@
         <h2>{{ product.name }}</h2>
         <p>{{ product.price }}</p>
     </div>
+
+    <input type="color" [(ngModel)]="box.background">
+
+    <div [ngStyle]="{
+        'width.px': 100,
+        'height.px': 100,
+        'background': box.background
+    }">
+
+    </div>
 </div>

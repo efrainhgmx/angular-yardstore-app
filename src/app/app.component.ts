@@ -9,6 +9,9 @@ import { Product } from './product.model';
 export class AppComponent {
   title = 'yard-store';
   barProgress = 50;
+  box = {
+    background: 'red',
+  }
 
   products: Product[] = [
     {
